@@ -4,23 +4,11 @@
     "slug": "carteira-demo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "android": {
       "package": "com.exemplo.carteirademo",
       "versionCode": 1
-    },
-    "plugins": [
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#E91E63",
-          "image": "./assets/splash-icon.png",
-          "imageWidth": 180,
-          "resizeMode": "contain"
-        }
-      ]
-    ]
+    }
   }
 }
