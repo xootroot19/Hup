@@ -9,11 +9,7 @@
     "newArchEnabled": true,
     "android": {
       "package": "com.exemplo.carteirademo",
-      "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#E91E63"
-      }
+      "versionCode": 1
     },
     "plugins": [
       [
