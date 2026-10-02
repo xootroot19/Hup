@@ -1,0 +1,22 @@
+name: Build Flutter APK
+on:
+  workflow_dispatch:
+  push:
+    branches: [ subway-offline-flutter ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Create Android platform
+        run: if [ ! -d android ]; then flutter create --platforms=android .; fi
+      - run: flutter pub get
+      - run: flutter build apk --release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: subway-offline-mod-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
