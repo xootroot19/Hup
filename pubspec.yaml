@@ -1,0 +1,13 @@
+name: subway_offline_mod
+description: Offline demo runner rebuilt in Flutter. No payments, servers or real-money features.
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/original/
